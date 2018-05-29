@@ -1,0 +1,1 @@
+export const HEADERNAV_UPDATE = 'HEADERNAV_UPDATE';
