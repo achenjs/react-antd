@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
 import { connect } from 'react-redux';
-import { Route } from 'react-router-dom';
-import Details from './Details';
-import Statistics from './Statistics';
 
 class OrderManage extends Component {
     constructor(props, context) {
@@ -14,8 +11,6 @@ class OrderManage extends Component {
     render() {
         return (
             <div>
-                <Route path="/orderManage/details" component={Details} replace />
-                <Route path="/orderManage/statistics" component={Statistics} replace />
             </div>
         );
     }
