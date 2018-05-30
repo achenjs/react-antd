@@ -6,7 +6,9 @@ import OrderManage from '../pages/OrderManage';                         //  订�
 import BuyData from '../pages/BuyData';                                 //  购买数据页
 import FinancialDataMaintain from '../pages/FinancialDataMaintain';     //  财务数据管理
 import NotFound from '../pages/NotFound';                               //  404
-
+import Account from '../pages/BuyData/Account';
+import Client from '../pages/BuyData/Client';
+import Renewal from '../pages/BuyData/Renewal';
 class RouteMap extends Component {
     render() {
         return (
@@ -17,7 +19,13 @@ class RouteMap extends Component {
                             <Route path="/" exact component={StatisticsSetting} />
                             <Route path="/statisticsSetting" component={StatisticsSetting} />
                             <Route path="/orderManage" component={OrderManage} />
-                            <Route path="/buyData" component={BuyData} />
+                            <Route path="/buyData" render={() => (
+                                <BuyData>
+                                    <Route path="/buyData/account" component={Account} />
+                                    <Route path="/buyData/client" component={Client} />
+                                    <Route path="/buyData/renewal" component={Renewal} />
+                                </BuyData>
+                            )} />
                             <Route path="/financialDataMantain" component={FinancialDataMaintain} />
                             <Route component={NotFound} />
                         </Switch>
