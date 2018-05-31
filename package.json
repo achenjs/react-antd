@@ -67,7 +67,8 @@
           "style": "css"
         }
       ],
-      "transform-decorators-legacy"
+      "transform-decorators-legacy",
+      "syntax-dynamic-import"
     ]
   },
   "eslintConfig": {
