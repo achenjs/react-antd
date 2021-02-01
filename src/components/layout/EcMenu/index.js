@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import PureRenderMixin from 'react-addons-pure-render-mixin';
-import routes from '@/config/routes';
+import { routes } from '@/config/routes';
 import MenuItem from './MenuItem';
 
 import styles from './style.less';
