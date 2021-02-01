@@ -1,4 +1,4 @@
 FROM nginx:1.15-alpine
-COPY build /etc/nginx/html
+COPY build /usr/local/nginx/html
 # COPY conf /etc/nginx/
-WORKDIR /etc/nginx/html
+WORKDIR /usr/local/nginx/html
